@@ -1,0 +1,7 @@
+stretch:
+    image: buildpack-deps:stretch
+    script:
+       - apt-get update -y && apt-get install -y python python-dev python-pip
+       - pip install -r requirements.txt
+       - echo localhost > inventory
+       - ansible-playbook -i inventory test.yml --connection=local -v
