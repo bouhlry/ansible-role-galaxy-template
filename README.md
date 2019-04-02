@@ -1,7 +1,7 @@
 Role Name
 =========
 
-A brief description of the role goes here.
+Template role for Ansible-galaxy user Bouhlry 
 
 Requirements
 ------------
