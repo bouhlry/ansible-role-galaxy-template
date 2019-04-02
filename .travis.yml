@@ -20,7 +20,7 @@ install:
 before_script:
   # Use actual Ansible Galaxy role name for the project directory.
   - cd ../
-  - mv ansible-role-$ROLE_NAME bouhlry.$ROLE_NAME
+  - mv $ROLE_NAME bouhlry.$ROLE_NAME
   - cd bouhlry.$ROLE_NAME
 
 script:
